@@ -122,7 +122,10 @@ class DICOMWindow(Gtk.Window):
                             vexpand=True, hexpand=True,
                             border_width=0,
                         )
-
+        self.set_border_width(1)
+        self.set_default_size(1200, 600)
+        
+        
 
         # create top grid
         self.grid = Gtk.Grid(vexpand=True, hexpand=True,
